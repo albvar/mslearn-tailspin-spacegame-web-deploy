@@ -35,11 +35,12 @@ stages:
     # Install Gulp
     - script: |
         npm install -g gulp-cli
-        displayName: 'Install Gulp'
-          - task: UseDotNet@2
-            displayName: 'Use .NET SDK $(dotnetSdkVersion)'
-            inputs:
-              version: '$(dotnetSdkVersion)'
+      displayName: 'Install Gulp'
+    
+    - task: UseDotNet@2
+      displayName: 'Use .NET SDK $(dotnetSdkVersion)'
+      inputs:
+        version: '$(dotnetSdkVersion)'
 
     - task: Npm@1
       displayName: 'Run npm install'
