@@ -13,7 +13,7 @@ stages:
     pool:
       name: 'dev-pool'
       #vmImage: 'ubuntu-20.04'
-      demands:
+      #demands:
       #- npm
 
     variables:
