@@ -88,8 +88,8 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      name: 'dev-pool'
-      #vmImage: 'ubuntu-20.04'
+      #name: 'dev-pool'
+      vmImage: 'ubuntu-20.04'
     environment: dev
     variables:
     - group: Release
